@@ -1,5 +1,10 @@
+use text_io::read;
+use text_io::try_read;
+
 fn main() {
-    let number_to_convert: i32 = 156;
+    println!("Write a number to convert in binary: ");
+
+    let number_to_convert: i32 = read!("{}\n");
     let decimal_to_binary: String = convert_decimal_number_to_binary_base(number_to_convert);
 
     println!("{} in binary = {}", number_to_convert, decimal_to_binary);
